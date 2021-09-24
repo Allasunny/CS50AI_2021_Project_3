@@ -257,7 +257,7 @@ class CrosswordCreator():
                               
         
         sorted_remaining_values = sorted(remaining_values, key = itemgetter(1), reverse = True)
-        sorted_remaining_values = sorted(remaining_values, key = itemgetter(0))
+        sorted(sorted_remaining_values, key = itemgetter(0))
         
         
         return sorted_remaining_values[0][2]
